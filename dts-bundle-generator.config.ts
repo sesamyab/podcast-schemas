@@ -2,7 +2,7 @@ const config = {
   entries: [
     {
       filePath: './src/index.ts',
-      outFile: './build/dist/sesamy-js.d.ts',
+      outFile: './build/dist/podcast-schemas.d.ts',
       noCheck: false,
     },
   ],
