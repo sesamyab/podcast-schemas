@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/sesamyab/podcast-schemas/compare/v1.0.0...v1.0.1) (2024-03-14)
+
+
+### Bug Fixes
+
+* expose rss extensions ([6dd6be4](https://github.com/sesamyab/podcast-schemas/commit/6dd6be4958589aa4b7a0886b439e90e5f7b10cdd))
+
 # 1.0.0 (2024-03-14)
 
 
