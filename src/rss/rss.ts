@@ -6,11 +6,11 @@ import { atomChannelExtensionSchema } from './rss-extensions/atom';
 import { contentChannelExtensionSchema, contentItemExtensionSchema } from './rss-extensions/content';
 import { googleChannelExtensionSchema } from './rss-extensions/google';
 import { acastChannelExtensionSchema, acastItemExtensionSchema } from './rss-extensions/acast';
-import { podaccessChannelSchema } from './rss-extensions/podacess';
+import { podaccessChannelSchema } from './rss-extensions/podaccess';
 import { baseItemSchema } from './item';
 
-export const RssBooleanSchema = z.enum(['yes', 'no']);
-export type RssBoolean = z.infer<typeof RssBooleanSchema>;
+export const rssBooleanSchema = z.enum(['yes', 'no']);
+export type RssBoolean = z.infer<typeof rssBooleanSchema>;
 
 export const itemSchema = baseItemSchema
   .extend(itunesItemExtensionSchema.shape)

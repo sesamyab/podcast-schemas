@@ -9,9 +9,7 @@ export const podaccessItemSchemaExtensions = z.object({
   '@_tier': z.string().optional(),
 });
 
-export const podaccessItemSchema = baseItemSchema.extend(
-  podaccessItemSchemaExtensions.shape,
-);
+export const podaccessItemSchema = baseItemSchema.extend(podaccessItemSchemaExtensions.shape);
 export type PodaccessItem = z.infer<typeof podaccessItemSchema>;
 
 export const podaccessChannelSchema = z.object({
