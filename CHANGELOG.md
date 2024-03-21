@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sesamyab/podcast-schemas/compare/v1.0.1...v1.1.0) (2024-03-21)
+
+
+### Features
+
+* expose itunes type and rss feed ([609f9e2](https://github.com/sesamyab/podcast-schemas/commit/609f9e23339714b8e84bfdf43ca2526c2f989e84))
+
 ## [1.0.1](https://github.com/sesamyab/podcast-schemas/compare/v1.0.0...v1.0.1) (2024-03-14)
 
 
