@@ -20,10 +20,12 @@ export const sesamyProductSchema = z.object({
   description: z.string().optional(),
   image: z.string().optional(),
   link: z.string().optional(),
-  type: z.string(),
-  period: z.enum(['day', 'week', 'month', 'year']).optional(),
+  // @deprecated
+  type: z.string().optional(),
+  period: z.enum(['DAY', 'WEEK', 'MONTH', 'YEAR']).optional(),
   price: z.number(),
-  purchase_type: z.enum(['own', 'lease', 'recurring']).optional(),
+  product_type: z.enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE']).optional(),
+  purchase_type: z.enum(['OWN', 'LEASE', 'RECURRING']).optional(),
   time: z.number().optional(),
   currency: z.string(),
   'price-overrides': z
@@ -45,6 +47,16 @@ export const sesamyChannelExtensionSchema = z.object({
   'sesamy:vendor-id': z.string().optional(),
   'sesamy:product': z.array(sesamyProductSchema).optional(),
   'sesamy:private': z.string().optional(),
-  'sesamy:user': z.string().optional(),
+  'sesamy:user': z
+    .union([
+      // @deprecated
+      z.string(),
+      z.object({
+        'sesamy:id': z.string(),
+        'sesamy:email': z.string(),
+        'sesamy:name': z.string(),
+      }),
+    ])
+    .optional(),
   'sesamy:title': z.string().optional(),
 });

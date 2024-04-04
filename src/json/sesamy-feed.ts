@@ -56,7 +56,15 @@ const sesamyFeedSchema = z.object({
   title: z.string(),
   titleWithUsername: z.string(),
   link: z.string(),
+  // @deprecated
   username: z.string().optional(),
+  user: z
+    .object({
+      id: z.string(),
+      name: z.string(),
+      email: z.string(),
+    })
+    .optional(),
   subtitle: z.string().optional(),
   description: z.string().optional(),
   descriptionWithHtml: z.string().optional(),
