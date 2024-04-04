@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/sesamyab/podcast-schemas/compare/v1.1.0...v1.2.0) (2024-04-04)
+
+
+### Bug Fixes
+
+* update renovate config ([51a86c6](https://github.com/sesamyab/podcast-schemas/commit/51a86c6e342a50324d92370b063b8975f5560b33))
+
+
+### Features
+
+* add user email ([79771e1](https://github.com/sesamyab/podcast-schemas/commit/79771e1a92e5367e0bb5b83496e688bddcad20d8))
+
 # [1.1.0](https://github.com/sesamyab/podcast-schemas/compare/v1.0.1...v1.1.0) (2024-03-21)
 
 
