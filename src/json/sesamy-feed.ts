@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const podcastTypeSchema = z.enum(['episodic', 'serial']);
+const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']);
 const podcastBuyOptionTypeSchema = z.enum(['Recurring', 'Single Purchase', 'single']);
 const sesamyFeedEpisodeTypeSchema = z.enum(['full', 'trailer']);
 const sesamyFeedContentTypeSchema = z.enum(['audio/mpeg']);
@@ -44,7 +44,9 @@ const sesamyFeedProductSchema = z.object({
   id: z.string(),
   description: z.string().optional(),
   title: z.string(),
-  type: podcastBuyOptionTypeSchema,
+  type: podcastBuyOptionTypeSchema.optional(),
+  productType: z.enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE']).optional(),
+  purchaseType: z.enum(['OWN', 'LEASE', 'RECURRING']).optional(),
   currency: z.string(),
   price: z.number(),
   priceOverrides: z.array(sesamyPriceOverrideSchema).optional(),
