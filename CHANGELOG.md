@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/sesamyab/podcast-schemas/compare/v1.2.0...v1.2.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* casing an product updates ([16775b4](https://github.com/sesamyab/podcast-schemas/commit/16775b4ca1c18715f50ae2b32a3d91bb4d70c7ec))
+
 # [1.2.0](https://github.com/sesamyab/podcast-schemas/compare/v1.1.0...v1.2.0) (2024-04-04)
 
 
