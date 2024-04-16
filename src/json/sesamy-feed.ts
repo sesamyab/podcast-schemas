@@ -45,8 +45,19 @@ const sesamyFeedProductSchema = z.object({
   description: z.string().optional(),
   title: z.string(),
   type: podcastBuyOptionTypeSchema.optional(),
-  productType: z.enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE']).optional(),
-  purchaseType: z.enum(['OWN', 'LEASE', 'RECURRING']).optional(),
+  productType: z
+    .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  purchaseType: z
+    .enum(['OWN', 'LEASE', 'RECURRING'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  period: z
+    .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  time: z.number().optional(),
   currency: z.string(),
   price: z.number(),
   priceOverrides: z.array(sesamyPriceOverrideSchema).optional(),
