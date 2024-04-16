@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/sesamyab/podcast-schemas/compare/v1.2.1...v1.2.2) (2024-04-16)
+
+
+### Bug Fixes
+
+* add recurring period and time to json ([95de06b](https://github.com/sesamyab/podcast-schemas/commit/95de06b2505fccc733c49fa0a09b6a0324eb0872))
+
 ## [1.2.1](https://github.com/sesamyab/podcast-schemas/compare/v1.2.0...v1.2.1) (2024-04-05)
 
 
