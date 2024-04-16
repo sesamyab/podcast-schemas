@@ -22,10 +22,19 @@ export const sesamyProductSchema = z.object({
   link: z.string().optional(),
   // @deprecated
   type: z.string().optional(),
-  period: z.enum(['DAY', 'WEEK', 'MONTH', 'YEAR']).optional(),
+  period: z
+    .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
+    .transform(value => value.toUpperCase())
+    .optional(),
   price: z.number(),
-  product_type: z.enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE']).optional(),
-  purchase_type: z.enum(['OWN', 'LEASE', 'RECURRING']).optional(),
+  product_type: z
+    .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  purchase_type: z
+    .enum(['OWN', 'LEASE', 'RECURRING'])
+    .transform(value => value.toUpperCase())
+    .optional(),
   time: z.number().optional(),
   currency: z.string(),
   'price-overrides': z
