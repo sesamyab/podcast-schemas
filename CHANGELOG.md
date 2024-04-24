@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/sesamyab/podcast-schemas/compare/v1.2.2...v1.2.3) (2024-04-24)
+
+
+### Bug Fixes
+
+* export zod schemas ([e01d96e](https://github.com/sesamyab/podcast-schemas/commit/e01d96e1f89a2360b16751eabb001934e59131d8))
+
 ## [1.2.2](https://github.com/sesamyab/podcast-schemas/compare/v1.2.1...v1.2.2) (2024-04-16)
 
 
