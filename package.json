@@ -25,7 +25,8 @@
     "type-check": "tsc",
     "semantic-release": "semantic-release",
     "lint": "eslint . --ext .ts",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "test": "vitest"
   },
   "release": {
     "branches": [
@@ -71,7 +72,7 @@
     "semantic-release": "23.0.7",
     "typescript": "5.4.4",
     "vite": "5.2.8",
-    "vitest": "1.4.0"
+    "vitest": "^1.5.0"
   },
   "dependencies": {
     "zod": "^3.22.4"

@@ -1,22 +1,22 @@
 import { z } from 'zod';
 
-const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']);
-const podcastBuyOptionTypeSchema = z.enum(['Recurring', 'Single Purchase', 'single']);
-const sesamyFeedEpisodeTypeSchema = z.enum(['full', 'trailer']);
-const sesamyFeedContentTypeSchema = z.enum(['audio/mpeg']);
+export const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']);
+export const podcastBuyOptionTypeSchema = z.enum(['Recurring', 'Single Purchase', 'single']);
+export const sesamyFeedEpisodeTypeSchema = z.enum(['full', 'trailer']);
+export const sesamyFeedContentTypeSchema = z.enum(['audio/mpeg']);
 
-const sesamyFeedOwnerSchema = z.object({
+export const sesamyFeedOwnerSchema = z.object({
   name: z.string().optional(),
   email: z.string().optional(),
 });
 
-const sesamyPriceOverrideSchema = z.object({
+export const sesamyPriceOverrideSchema = z.object({
   price: z.number(),
   currency: z.string(),
   market: z.string(),
 });
 
-const sesamyFeedEpisodeSchema = z.object({
+export const sesamyFeedEpisodeSchema = z.object({
   guid: z.string(),
   title: z.string(),
   subtitle: z.string().optional(),
@@ -40,7 +40,7 @@ const sesamyFeedEpisodeSchema = z.object({
   permissions: z.array(z.string()),
 });
 
-const sesamyFeedProductSchema = z.object({
+export const sesamyFeedProductSchema = z.object({
   id: z.string(),
   description: z.string().optional(),
   title: z.string(),
@@ -64,7 +64,7 @@ const sesamyFeedProductSchema = z.object({
   image: z.string().optional(),
 });
 
-const sesamyFeedSchema = z.object({
+export const sesamyFeedSchema = z.object({
   externalIds: z.record(z.string().optional()),
   title: z.string(),
   titleWithUsername: z.string(),
