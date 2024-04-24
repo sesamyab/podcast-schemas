@@ -1,9 +1,11 @@
 import { z } from 'zod';
 
-export const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']);
+export const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']).transform(value => value.toUpperCase());
 export const podcastBuyOptionTypeSchema = z.enum(['Recurring', 'Single Purchase', 'single']);
-export const sesamyFeedEpisodeTypeSchema = z.enum(['full', 'trailer']);
-export const sesamyFeedContentTypeSchema = z.enum(['audio/mpeg']);
+export const sesamyFeedEpisodeTypeSchema = z
+  .enum(['full', 'trailer', 'bonus'])
+  .transform(value => value.toLocaleLowerCase());
+export const sesamyFeedContentTypeSchema = z.enum(['audio/mpeg']).transform(value => value.toLowerCase());
 
 export const sesamyFeedOwnerSchema = z.object({
   name: z.string().optional(),
