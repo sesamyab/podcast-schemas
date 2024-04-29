@@ -8,6 +8,11 @@ import { googleChannelExtensionSchema } from './rss-extensions/google';
 import { acastChannelExtensionSchema, acastItemExtensionSchema } from './rss-extensions/acast';
 import { podaccessChannelSchema } from './rss-extensions/podaccess';
 import { baseItemSchema } from './item';
+import { podcastChannelExtensionSchema, podcastItemExtensionSchema } from './rss-extensions/podcast';
+import { rawvoiceChannelExtensionSchema, rawvoiceItemExtensionSchema } from './rss-extensions/rawvoice';
+import { mediaItemExtensionSchema } from './rss-extensions/media';
+import { creativeCommonsChannelExtensionSchema } from './rss-extensions/creativeCommons';
+import { syChannelExtensionSchema } from './rss-extensions/sy';
 
 export const rssBooleanSchema = z.enum(['yes', 'no']);
 export type RssBoolean = z.infer<typeof rssBooleanSchema>;
@@ -17,6 +22,9 @@ export const itemSchema = baseItemSchema
   .extend(contentItemExtensionSchema.shape)
   .extend(sesamyItemExtension.shape)
   .extend(spotifyItemExtension.shape)
+  .extend(podcastItemExtensionSchema.shape)
+  .extend(mediaItemExtensionSchema.shape)
+  .extend(rawvoiceItemExtensionSchema.shape)
   .extend(acastItemExtensionSchema.shape);
 
 export type Item = z.infer<typeof itemSchema>;
@@ -25,8 +33,12 @@ export const channelSchema = z
   .object({
     title: z.string(),
     link: z.string().url(),
+    docs: z.string().optional(),
     generator: z.string().optional(),
     copyright: z.string().optional(),
+    category: z.array(z.string()).optional(),
+    managingEditor: z.string().optional(),
+    webMaster: z.string().optional(),
     pubDate: z.string().optional(),
     ttl: z.number().optional(),
     image: z.object({
@@ -46,6 +58,10 @@ export const channelSchema = z
   .extend(itunesChannelExtensionSchema.shape)
   .extend(googleChannelExtensionSchema.shape)
   .extend(podaccessChannelSchema.shape)
+  .extend(syChannelExtensionSchema.shape)
+  .extend(podcastChannelExtensionSchema.shape)
+  .extend(rawvoiceChannelExtensionSchema.shape)
+  .extend(creativeCommonsChannelExtensionSchema.shape)
   .extend(acastChannelExtensionSchema.shape);
 export type Channel = z.infer<typeof channelSchema>;
 
@@ -61,10 +77,14 @@ export const rssSchema = z.object({
   '@_xmlns:acast': z.literal('https://schema.acast.com/1.0/').optional(),
   '@_xmlns:media': z.literal('http://search.yahoo.com/mrss/').optional(),
   '@_xmlns:podaccess': z.literal('https://access.acast.com/schema/1.0/').optional(),
+  '@_xmlns:creativeCommons': z.literal('http://backend.userland.com/creativeCommonsRssModule').optional(),
+  '@_xmlns:sy': z.literal('http://purl.org/rss/1.0/modules/syndication/').optional(),
+  '@_xmlns:rawvoice': z.literal('http://www.rawvoice.com/rawvoiceRssModule/').optional(),
+  '@_xmlns:podcast': z.literal('https://podcastindex.org/namespace/1.0').optional(),
 });
 export type Rss = z.infer<typeof rssSchema>;
 
-export const RssFeedSchena = z.object({
+export const rssFeedSchema = z.object({
   rss: rssSchema,
   '?xml': z
     .object({
@@ -80,4 +100,4 @@ export const RssFeedSchena = z.object({
     })
     .optional(),
 });
-export type RssFeed = z.infer<typeof RssFeedSchena>;
+export type RssFeed = z.infer<typeof rssFeedSchema>;

@@ -8,6 +8,8 @@ export const baseItemSchema = z.object({
   }),
   'content:encoded': z.string().optional(),
   link: z.string().optional(),
+  comments: z.string().optional(),
+  category: z.array(z.string()).optional(),
   pubDate: z.string(),
   title: z.string().optional(),
   enclosure: z
