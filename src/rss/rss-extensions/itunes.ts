@@ -12,6 +12,7 @@ export const itunesItemExtensionSchema = z.object({
       '@_href': z.string(),
     })
     .optional(),
+  'itunes:keywords': z.string().optional(),
   'itunes:episode': z.number().optional(),
   'itunes:season': z.number().optional(),
   'itunes:subtitle': z.string().optional(),
@@ -37,6 +38,7 @@ export const itunesChannelExtensionSchema = z.object({
   'itunes:block': z.string().optional(),
   'itunes:category': itunesCategorySchema.array().optional(),
   'itunes:explicit': z.string().optional(),
+  'itunes:new-feed-url': z.string().optional(),
   'itunes:complete': z.enum(['yes', 'no']).optional(),
   'itunes:image': z
     .object({
