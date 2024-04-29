@@ -1,4 +1,4 @@
-export { rssBooleanSchema, itemSchema, channelSchema, rssSchema } from './rss/rss';
+export { rssBooleanSchema, itemSchema, channelSchema, rssSchema, rssFeedSchema } from './rss/rss';
 
 export type { RssBoolean, Item, Channel, Rss, RssFeed } from './rss/rss';
 
