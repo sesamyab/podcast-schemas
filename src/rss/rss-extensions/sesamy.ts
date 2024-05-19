@@ -27,15 +27,16 @@ export const sesamyProductSchema = z.object({
     .transform(value => value.toUpperCase())
     .optional(),
   price: z.number(),
-  product_type: z
+  'product-type': z
     .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
     .transform(value => value.toUpperCase())
     .optional(),
-  purchase_type: z
+  'purchase-type': z
     .enum(['OWN', 'LEASE', 'RECURRING'])
     .transform(value => value.toUpperCase())
     .optional(),
   time: z.number().optional(),
+  'selling-points': z.array(z.string()).optional(),
   currency: z.string(),
   'price-overrides': z
     .array(
