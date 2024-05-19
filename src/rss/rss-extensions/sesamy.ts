@@ -14,20 +14,35 @@ export const sesamyItemSchema = baseItemSchema
   .extend(itunesItemExtensionSchema.shape)
   .extend(contentItemExtensionSchema.shape);
 
+// TODO: All the nodes should be namespaced with 'sesamy:'. Remove the fallbacks once all systems are updated
 export const sesamyProductSchema = z.object({
-  id: z.string(),
-  title: z.string(),
+  id: z.string().optional(),
+  'sesamy:id': z.string().optional(),
+  title: z.string().optional(),
+  'sesamy:title': z.string().optional(),
   description: z.string().optional(),
+  'sesamy:description': z.string().optional(),
   image: z.string().optional(),
+  'sesamy:image': z.string().optional(),
   link: z.string().optional(),
+  'sesamy:link': z.string().optional(),
   // @deprecated
   type: z.string().optional(),
   period: z
     .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
     .transform(value => value.toUpperCase())
     .optional(),
-  price: z.number(),
+  'sesamy-period': z
+    .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  price: z.number().optional(),
+  'sesamy:price': z.number().optional(),
   'product-type': z
+    .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
+    .transform(value => value.toUpperCase())
+    .optional(),
+  'sesamy:product-type': z
     .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
     .transform(value => value.toUpperCase())
     .optional(),
@@ -35,10 +50,15 @@ export const sesamyProductSchema = z.object({
     .enum(['OWN', 'LEASE', 'RECURRING'])
     .transform(value => value.toUpperCase())
     .optional(),
+  'sesamy:purchase-type': z
+    .enum(['OWN', 'LEASE', 'RECURRING'])
+    .transform(value => value.toUpperCase())
+    .optional(),
   time: z.number().optional(),
-  'selling-points': z.array(z.string()).optional(),
+  'sesamy:time': z.number().optional(),
+  'sesamy:selling-points': z.array(z.string()).optional(),
   currency: z.string(),
-  'price-overrides': z
+  'sesamy:price-overrides': z
     .array(
       z.object({
         price: z.number(),
@@ -48,6 +68,7 @@ export const sesamyProductSchema = z.object({
     )
     .optional(),
 });
+
 export type SesamyProduct = z.infer<typeof sesamyProductSchema>;
 
 export const sesamyChannelExtensionSchema = z.object({
