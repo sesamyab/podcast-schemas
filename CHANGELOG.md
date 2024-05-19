@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/sesamyab/podcast-schemas/compare/v1.3.0...v1.4.0) (2024-05-19)
+
+
+### Bug Fixes
+
+* add namespace for childnodes ([4d7c1f9](https://github.com/sesamyab/podcast-schemas/commit/4d7c1f9ff3a9327a9a7a02e853c6f050c9843c0e))
+* **deps:** update dependency zod to v3.23.6 ([861c682](https://github.com/sesamyab/podcast-schemas/commit/861c68241eb59c51a7a3954e4df39e998d2d9c6c))
+* **deps:** update dependency zod to v3.23.8 ([e66cb13](https://github.com/sesamyab/podcast-schemas/commit/e66cb1328128b542e687500d7495b927dd17abba))
+
+
+### Features
+
+* add selling points and fix caing ([ad97f2b](https://github.com/sesamyab/podcast-schemas/commit/ad97f2b545b1ed46590bc310986a033ac3eb44da))
+
 # [1.3.0](https://github.com/sesamyab/podcast-schemas/compare/v1.2.3...v1.3.0) (2024-04-29)
 
 
