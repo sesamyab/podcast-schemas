@@ -17,15 +17,16 @@ import { syChannelExtensionSchema } from './rss-extensions/sy';
 export const rssBooleanSchema = z.enum(['yes', 'no']);
 export type RssBoolean = z.infer<typeof rssBooleanSchema>;
 
-export const itemSchema = baseItemSchema
-  .extend(itunesItemExtensionSchema.shape)
-  .extend(contentItemExtensionSchema.shape)
-  .extend(sesamyItemExtension.shape)
-  .extend(spotifyItemExtension.shape)
-  .extend(podcastItemExtensionSchema.shape)
-  .extend(mediaItemExtensionSchema.shape)
-  .extend(rawvoiceItemExtensionSchema.shape)
-  .extend(acastItemExtensionSchema.shape);
+export const itemSchema = baseItemSchema.extend({
+  ...itunesItemExtensionSchema.shape,
+  ...contentItemExtensionSchema.shape,
+  ...sesamyItemExtension.shape,
+  ...spotifyItemExtension.shape,
+  ...podcastItemExtensionSchema.shape,
+  ...mediaItemExtensionSchema.shape,
+  ...rawvoiceItemExtensionSchema.shape,
+  ...acastItemExtensionSchema.shape,
+});
 
 export type Item = z.infer<typeof itemSchema>;
 
@@ -51,18 +52,20 @@ export const channelSchema = z
     lastBuildDate: z.string().optional(),
     item: z.array(itemSchema),
   })
-  .extend(atomChannelExtensionSchema.shape)
-  .extend(contentChannelExtensionSchema.shape)
-  .extend(sesamyChannelExtensionSchema.shape)
-  .extend(spotifyChannelExtension.shape)
-  .extend(itunesChannelExtensionSchema.shape)
-  .extend(googleChannelExtensionSchema.shape)
-  .extend(podaccessChannelSchema.shape)
-  .extend(syChannelExtensionSchema.shape)
-  .extend(podcastChannelExtensionSchema.shape)
-  .extend(rawvoiceChannelExtensionSchema.shape)
-  .extend(creativeCommonsChannelExtensionSchema.shape)
-  .extend(acastChannelExtensionSchema.shape);
+  .extend({
+    ...atomChannelExtensionSchema.shape,
+    ...contentChannelExtensionSchema.shape,
+    ...sesamyChannelExtensionSchema.shape,
+    ...spotifyChannelExtension.shape,
+    ...itunesChannelExtensionSchema.shape,
+    ...googleChannelExtensionSchema.shape,
+    ...podaccessChannelSchema.shape,
+    ...syChannelExtensionSchema.shape,
+    ...podcastChannelExtensionSchema.shape,
+    ...rawvoiceChannelExtensionSchema.shape,
+    ...creativeCommonsChannelExtensionSchema.shape,
+    ...acastChannelExtensionSchema.shape,
+  });
 export type Channel = z.infer<typeof channelSchema>;
 
 export const rssSchema = z.object({

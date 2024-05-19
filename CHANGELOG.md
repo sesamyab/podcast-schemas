@@ -1,3 +1,22 @@
+# [1.3.0](https://github.com/sesamyab/podcast-schemas/compare/v1.2.3...v1.3.0) (2024-04-29)
+
+
+### Bug Fixes
+
+* bonus episodes ([93fd021](https://github.com/sesamyab/podcast-schemas/commit/93fd021123fb3024b3d940b413d72bec5e4fb33e))
+
+
+### Features
+
+* add support for twit extensions ([0a1e841](https://github.com/sesamyab/podcast-schemas/commit/0a1e84137dc9caffb69cc99a81cb25f1076128db))
+
+## [1.2.3](https://github.com/sesamyab/podcast-schemas/compare/v1.2.2...v1.2.3) (2024-04-24)
+
+
+### Bug Fixes
+
+* export zod schemas ([e01d96e](https://github.com/sesamyab/podcast-schemas/commit/e01d96e1f89a2360b16751eabb001934e59131d8))
+
 ## [1.2.2](https://github.com/sesamyab/podcast-schemas/compare/v1.2.1...v1.2.2) (2024-04-16)
 
 
