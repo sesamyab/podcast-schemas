@@ -46,6 +46,7 @@ export const sesamyFeedProductSchema = z.object({
   id: z.string(),
   description: z.string().optional(),
   title: z.string(),
+  sellingPoints: z.array(z.string()).optional(),
   type: podcastBuyOptionTypeSchema.optional(),
   productType: z
     .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
