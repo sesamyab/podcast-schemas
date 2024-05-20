@@ -32,7 +32,7 @@ export const sesamyProductSchema = z.object({
     .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
     .transform(value => value.toUpperCase())
     .optional(),
-  'sesamy-period': z
+  'sesamy:period': z
     .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
     .transform(value => value.toUpperCase())
     .optional(),
@@ -58,6 +58,7 @@ export const sesamyProductSchema = z.object({
   'sesamy:time': z.number().optional(),
   'sesamy:selling-points': z.array(z.string()).optional(),
   currency: z.string(),
+  'sesamy:currency': z.string(),
   'sesamy:price-overrides': z
     .array(
       z.object({
