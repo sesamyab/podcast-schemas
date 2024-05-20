@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/sesamyab/podcast-schemas/compare/v1.4.2...v1.4.3) (2024-05-20)
+
+
+### Bug Fixes
+
+* remove plural ([a2db261](https://github.com/sesamyab/podcast-schemas/commit/a2db261233403b6b8970125d046de06356d72709))
+
 ## [1.4.2](https://github.com/sesamyab/podcast-schemas/compare/v1.4.1...v1.4.2) (2024-05-20)
 
 
