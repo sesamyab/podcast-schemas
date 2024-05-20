@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/sesamyab/podcast-schemas/compare/v1.4.0...v1.4.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* add product selling points ([c18c62d](https://github.com/sesamyab/podcast-schemas/commit/c18c62db6dc8557cee103e1cff365d5d60e73543))
+
 # [1.4.0](https://github.com/sesamyab/podcast-schemas/compare/v1.3.0...v1.4.0) (2024-05-19)
 
 
