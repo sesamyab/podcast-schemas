@@ -57,14 +57,15 @@ export const sesamyProductSchema = z.object({
   time: z.number().optional(),
   'sesamy:time': z.number().optional(),
   'sesamy:selling-point': z.array(z.string()).optional(),
-  currency: z.string(),
-  'sesamy:currency': z.string(),
+  // One of these two should be present
+  currency: z.string().optional(),
+  'sesamy:currency': z.string().optional(),
   'sesamy:price-override': z
     .array(
       z.object({
-        price: z.number(),
-        currency: z.string(),
-        market: z.string(),
+        'sesamy:price': z.number(),
+        'sesamy:currency': z.string(),
+        'sesamy:market': z.string(),
       }),
     )
     .optional(),
