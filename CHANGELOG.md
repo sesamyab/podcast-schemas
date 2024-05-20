@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/sesamyab/podcast-schemas/compare/v1.4.1...v1.4.2) (2024-05-20)
+
+
+### Bug Fixes
+
+* typos in namespace ([1fb1aa2](https://github.com/sesamyab/podcast-schemas/commit/1fb1aa22ffeab1e488e2debeb51f977317cb734b))
+
 ## [1.4.1](https://github.com/sesamyab/podcast-schemas/compare/v1.4.0...v1.4.1) (2024-05-20)
 
 
