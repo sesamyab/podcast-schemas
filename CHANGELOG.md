@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/sesamyab/podcast-schemas/compare/v1.4.3...v1.4.4) (2024-05-20)
+
+
+### Bug Fixes
+
+* add price override namespace ([2254b75](https://github.com/sesamyab/podcast-schemas/commit/2254b75f656cb13f600200a9eaf4cfb8255ec597))
+
 ## [1.4.3](https://github.com/sesamyab/podcast-schemas/compare/v1.4.2...v1.4.3) (2024-05-20)
 
 
