@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/sesamyab/podcast-schemas/compare/v1.4.4...v1.4.5) (2024-05-22)
+
+
+### Bug Fixes
+
+* refactor types ([293e409](https://github.com/sesamyab/podcast-schemas/commit/293e409664ba91a5a92b65ed860cdccf84f5f3af))
+
 ## [1.4.4](https://github.com/sesamyab/podcast-schemas/compare/v1.4.3...v1.4.4) (2024-05-20)
 
 
