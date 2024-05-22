@@ -44,18 +44,13 @@ export const sesamyFeedEpisodeSchema = z.object({
 
 export const sesamyFeedProductSchema = z.object({
   id: z.string(),
-  description: z.string().optional(),
+  description: z.string().default(''),
   title: z.string(),
-  sellingPoints: z.array(z.string()).optional(),
+  sellingPoints: z.array(z.string()).default([]),
+  // @deprecated
   type: podcastBuyOptionTypeSchema.optional(),
-  productType: z
-    .enum(['ARTICLE', 'EPISODE', 'PODCAST', 'PASS', 'BUNDLE'])
-    .transform(value => value.toUpperCase())
-    .optional(),
-  purchaseType: z
-    .enum(['OWN', 'LEASE', 'RECURRING'])
-    .transform(value => value.toUpperCase())
-    .optional(),
+  packageType: z.enum(['SINGLE', 'COLLECTION', 'MULTIPRODUCT']).transform(value => value.toUpperCase()),
+  purchaseType: z.enum(['OWN', 'LEASE', 'RECURRING']).transform(value => value.toUpperCase()),
   period: z
     .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
     .transform(value => value.toUpperCase())
