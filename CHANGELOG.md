@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/sesamyab/podcast-schemas/compare/v1.4.5...v1.4.6) (2024-05-22)
+
+
+### Bug Fixes
+
+* update sesamy json format ([720bfbb](https://github.com/sesamyab/podcast-schemas/commit/720bfbb04d75e0972651b0b165fe1923aa2c43ab))
+
 ## [1.4.5](https://github.com/sesamyab/podcast-schemas/compare/v1.4.4...v1.4.5) (2024-05-22)
 
 
