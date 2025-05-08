@@ -13,7 +13,7 @@ import { rawvoiceChannelExtensionSchema, rawvoiceItemExtensionSchema } from './r
 import { mediaItemExtensionSchema } from './rss-extensions/media';
 import { creativeCommonsChannelExtensionSchema } from './rss-extensions/creativeCommons';
 import { syChannelExtensionSchema } from './rss-extensions/sy';
-import { omnyItemExtensionSchema } from './rss-extensions/omny';
+import { omnyChannelExtensionSchema, omnyItemExtensionSchema } from './rss-extensions/omny';
 
 export const rssBooleanSchema = z.enum(['yes', 'no']);
 export type RssBoolean = z.infer<typeof rssBooleanSchema>;
@@ -67,7 +67,7 @@ export const channelSchema = z
     ...rawvoiceChannelExtensionSchema.shape,
     ...creativeCommonsChannelExtensionSchema.shape,
     ...acastChannelExtensionSchema.shape,
-    ...omnyItemExtensionSchema.shape,
+    ...omnyChannelExtensionSchema.shape,
   });
 export type Channel = z.infer<typeof channelSchema>;
 
