@@ -1,3 +1,11 @@
+## [1.4.7](https://github.com/sesamyab/podcast-schemas/compare/v1.4.6...v1.4.7) (2025-05-08)
+
+
+### Bug Fixes
+
+* add omny extensions ([306e353](https://github.com/sesamyab/podcast-schemas/commit/306e3532ce212523039de7fc611ec5376ce1b1fe))
+* review comments ([9302723](https://github.com/sesamyab/podcast-schemas/commit/930272342d71d7e312a40a744b6f4b12c482094e))
+
 ## [1.4.6](https://github.com/sesamyab/podcast-schemas/compare/v1.4.5...v1.4.6) (2024-05-22)
 
 
