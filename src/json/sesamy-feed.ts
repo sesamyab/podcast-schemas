@@ -39,7 +39,8 @@ export const sesamyFeedEpisodeSchema = z.object({
   isLocked: z.boolean(),
   isSample: z.boolean(),
   isSesamy: z.boolean(),
-  permissions: z.array(z.string()),
+  permissions: z.array(z.string()).default([]),
+  tags: z.array(z.string()).default([]),
 });
 
 export const sesamyFeedProductSchema = z.object({
