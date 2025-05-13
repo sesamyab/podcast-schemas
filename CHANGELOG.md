@@ -1,3 +1,67 @@
+## [1.4.7](https://github.com/sesamyab/podcast-schemas/compare/v1.4.6...v1.4.7) (2025-05-08)
+
+
+### Bug Fixes
+
+* add omny extensions ([306e353](https://github.com/sesamyab/podcast-schemas/commit/306e3532ce212523039de7fc611ec5376ce1b1fe))
+* review comments ([9302723](https://github.com/sesamyab/podcast-schemas/commit/930272342d71d7e312a40a744b6f4b12c482094e))
+
+## [1.4.6](https://github.com/sesamyab/podcast-schemas/compare/v1.4.5...v1.4.6) (2024-05-22)
+
+
+### Bug Fixes
+
+* update sesamy json format ([720bfbb](https://github.com/sesamyab/podcast-schemas/commit/720bfbb04d75e0972651b0b165fe1923aa2c43ab))
+
+## [1.4.5](https://github.com/sesamyab/podcast-schemas/compare/v1.4.4...v1.4.5) (2024-05-22)
+
+
+### Bug Fixes
+
+* refactor types ([293e409](https://github.com/sesamyab/podcast-schemas/commit/293e409664ba91a5a92b65ed860cdccf84f5f3af))
+
+## [1.4.4](https://github.com/sesamyab/podcast-schemas/compare/v1.4.3...v1.4.4) (2024-05-20)
+
+
+### Bug Fixes
+
+* add price override namespace ([2254b75](https://github.com/sesamyab/podcast-schemas/commit/2254b75f656cb13f600200a9eaf4cfb8255ec597))
+
+## [1.4.3](https://github.com/sesamyab/podcast-schemas/compare/v1.4.2...v1.4.3) (2024-05-20)
+
+
+### Bug Fixes
+
+* remove plural ([a2db261](https://github.com/sesamyab/podcast-schemas/commit/a2db261233403b6b8970125d046de06356d72709))
+
+## [1.4.2](https://github.com/sesamyab/podcast-schemas/compare/v1.4.1...v1.4.2) (2024-05-20)
+
+
+### Bug Fixes
+
+* typos in namespace ([1fb1aa2](https://github.com/sesamyab/podcast-schemas/commit/1fb1aa22ffeab1e488e2debeb51f977317cb734b))
+
+## [1.4.1](https://github.com/sesamyab/podcast-schemas/compare/v1.4.0...v1.4.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* add product selling points ([c18c62d](https://github.com/sesamyab/podcast-schemas/commit/c18c62db6dc8557cee103e1cff365d5d60e73543))
+
+# [1.4.0](https://github.com/sesamyab/podcast-schemas/compare/v1.3.0...v1.4.0) (2024-05-19)
+
+
+### Bug Fixes
+
+* add namespace for childnodes ([4d7c1f9](https://github.com/sesamyab/podcast-schemas/commit/4d7c1f9ff3a9327a9a7a02e853c6f050c9843c0e))
+* **deps:** update dependency zod to v3.23.6 ([861c682](https://github.com/sesamyab/podcast-schemas/commit/861c68241eb59c51a7a3954e4df39e998d2d9c6c))
+* **deps:** update dependency zod to v3.23.8 ([e66cb13](https://github.com/sesamyab/podcast-schemas/commit/e66cb1328128b542e687500d7495b927dd17abba))
+
+
+### Features
+
+* add selling points and fix caing ([ad97f2b](https://github.com/sesamyab/podcast-schemas/commit/ad97f2b545b1ed46590bc310986a033ac3eb44da))
+
 # [1.3.0](https://github.com/sesamyab/podcast-schemas/compare/v1.2.3...v1.3.0) (2024-04-29)
 
 
