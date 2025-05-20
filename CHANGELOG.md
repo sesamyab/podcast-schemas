@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/sesamyab/podcast-schemas/compare/v1.4.8...v1.4.9) (2025-05-20)
+
+
+### Bug Fixes
+
+* add purchase url to product ([957a1f4](https://github.com/sesamyab/podcast-schemas/commit/957a1f43dddbeb5586b7b03e0d87e113b143c85e))
+
 ## [1.4.8](https://github.com/sesamyab/podcast-schemas/compare/v1.4.7...v1.4.8) (2025-05-13)
 
 
