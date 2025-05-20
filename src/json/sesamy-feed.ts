@@ -59,6 +59,7 @@ export const sesamyFeedProductSchema = z.object({
   time: z.number().optional(),
   currency: z.string(),
   price: z.number(),
+  purchaseUrl: z.string().optional(),
   priceOverrides: z.array(sesamyPriceOverrideSchema).optional(),
   image: z.string().optional(),
 });

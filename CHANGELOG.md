@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/sesamyab/podcast-schemas/compare/v1.4.7...v1.4.8) (2025-05-13)
+
+
+### Bug Fixes
+
+* add episode tags ([13c5444](https://github.com/sesamyab/podcast-schemas/commit/13c544458d9b3550ad8b71fe8e743c87d678e844))
+
 ## [1.4.7](https://github.com/sesamyab/podcast-schemas/compare/v1.4.6...v1.4.7) (2025-05-08)
 
 
