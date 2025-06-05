@@ -46,6 +46,7 @@ export const sesamyProductSchema = z.object({
     .enum(['OWN', 'LEASE', 'RECURRING'])
     .transform(value => value.toUpperCase())
     .optional(),
+  'sesamy:purchase-url': z.string().optional(),
   time: z.number().optional(),
   'sesamy:time': z.number().optional(),
   'sesamy:selling-point': z.array(z.string()).optional(),
