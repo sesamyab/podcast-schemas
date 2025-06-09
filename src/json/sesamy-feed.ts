@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { spotifyChannelExtension } from '../rss/rss-extensions/spotify';
 
 export const podcastTypeSchema = z.enum(['EPISODIC', 'SERIAL']).transform(value => value.toUpperCase());
 export const podcastBuyOptionTypeSchema = z.enum(['Recurring', 'Single Purchase', 'single']);
@@ -104,6 +105,7 @@ export const sesamyFeedSchema = z.object({
     vendorId: z.string().optional(),
     isPrivate: z.boolean(),
   }),
+  spotify: spotifyChannelExtension.optional(),
 });
 
 export type PodcastType = z.infer<typeof podcastTypeSchema>;
