@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/sesamyab/podcast-schemas/compare/v1.4.10...v1.5.0) (2025-06-09)
+
+
+### Features
+
+* add spotify to sesamy-schema ([7a8d04d](https://github.com/sesamyab/podcast-schemas/commit/7a8d04dd99ea2193117c1191fbefedf7d0096081))
+
 ## [1.4.10](https://github.com/sesamyab/podcast-schemas/compare/v1.4.9...v1.4.10) (2025-06-05)
 
 
