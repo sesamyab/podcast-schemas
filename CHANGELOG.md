@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/sesamyab/podcast-schemas/compare/v1.5.1...v1.5.2) (2025-06-09)
+
+
+### Bug Fixes
+
+* make spotify property optional ([25d9b82](https://github.com/sesamyab/podcast-schemas/commit/25d9b82ed2cb71329fb82d1202c2597716c34c00))
+
 ## [1.5.1](https://github.com/sesamyab/podcast-schemas/compare/v1.5.0...v1.5.1) (2025-06-09)
 
 
