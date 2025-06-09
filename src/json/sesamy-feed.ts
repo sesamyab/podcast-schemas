@@ -103,10 +103,12 @@ export const sesamyFeedSchema = z.object({
     vendorId: z.string().optional(),
     isPrivate: z.boolean(),
   }),
-  spotify: z.object({
-    partnerId: z.string().optional(),
-    sandbox: z.boolean().optional(),
-  }),
+  spotify: z
+    .object({
+      partnerId: z.string(),
+      sandbox: z.boolean().default(false),
+    })
+    .optional(),
 });
 
 export type PodcastType = z.infer<typeof podcastTypeSchema>;
