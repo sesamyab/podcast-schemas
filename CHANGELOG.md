@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/sesamyab/podcast-schemas/compare/v1.5.0...v1.5.1) (2025-06-09)
+
+
+### Bug Fixes
+
+* update the schema for parsed spotify feeds ([bd3af10](https://github.com/sesamyab/podcast-schemas/commit/bd3af10163fc81c8d2a695905d920adf88cbae34))
+
 # [1.5.0](https://github.com/sesamyab/podcast-schemas/compare/v1.4.10...v1.5.0) (2025-06-09)
 
 
