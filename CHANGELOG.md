@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/sesamyab/podcast-schemas/compare/v1.6.0...v1.6.1) (2025-06-13)
+
+
+### Bug Fixes
+
+* types ([bee1e8f](https://github.com/sesamyab/podcast-schemas/commit/bee1e8f6519aa1ee181f676830bda509e6725c83))
+
 # [1.6.0](https://github.com/sesamyab/podcast-schemas/compare/v1.5.2...v1.6.0) (2025-06-13)
 
 
