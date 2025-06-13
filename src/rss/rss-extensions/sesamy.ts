@@ -26,12 +26,7 @@ export const sesamyProductSchema = z.object({
   'sesamy:image': z.string().optional(),
   link: z.string().optional(),
   'sesamy:link': z.string().optional(),
-  // @deprecated
-  type: z.string().optional(),
-  period: z
-    .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
-    .transform(value => value.toUpperCase())
-    .optional(),
+  'sesamy:sku': z.string().optional(),
   'sesamy:period': z
     .enum(['DAY', 'WEEK', 'MONTH', 'YEAR'])
     .transform(value => value.toUpperCase())
@@ -72,18 +67,13 @@ export const sesamyChannelExtensionSchema = z.object({
   'sesamy:brand-id': z.string().optional(),
   'sesamy:vendor-id': z.string().optional(),
   'sesamy:product': z.array(sesamyProductSchema).optional(),
-  'sesam:sku': z.string().optional(),
   'sesamy:private': z.string().optional(),
   'sesamy:user': z
-    .union([
-      // @deprecated
-      z.string(),
-      z.object({
-        'sesamy:id': z.string(),
-        'sesamy:email': z.string(),
-        'sesamy:name': z.string(),
-      }),
-    ])
+    .object({
+      'sesamy:id': z.string(),
+      'sesamy:email': z.string(),
+      'sesamy:name': z.string(),
+    })
     .optional(),
   'sesamy:title': z.string().optional(),
 });
