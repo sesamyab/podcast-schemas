@@ -72,6 +72,7 @@ export const sesamyChannelExtensionSchema = z.object({
   'sesamy:brand-id': z.string().optional(),
   'sesamy:vendor-id': z.string().optional(),
   'sesamy:product': z.array(sesamyProductSchema).optional(),
+  'sesam:sku': z.string().optional(),
   'sesamy:private': z.string().optional(),
   'sesamy:user': z
     .union([
