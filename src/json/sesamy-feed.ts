@@ -44,6 +44,7 @@ export const sesamyFeedEpisodeSchema = z.object({
 
 export const sesamyFeedProductSchema = z.object({
   id: z.string(),
+  sku: z.string().optional(),
   description: z.string().default(''),
   title: z.string(),
   sellingPoints: z.array(z.string()).default([]),
