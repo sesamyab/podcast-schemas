@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/sesamyab/podcast-schemas/compare/v1.5.2...v1.6.0) (2025-06-13)
+
+
+### Features
+
+* add sku property to match to exising products ([f74950f](https://github.com/sesamyab/podcast-schemas/commit/f74950fd6d9c91d37d690c96b45f1f1f37e8111d))
+
 ## [1.5.2](https://github.com/sesamyab/podcast-schemas/compare/v1.5.1...v1.5.2) (2025-06-09)
 
 
