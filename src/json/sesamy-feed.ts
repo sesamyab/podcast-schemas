@@ -48,8 +48,6 @@ export const sesamyFeedProductSchema = z.object({
   description: z.string().default(''),
   title: z.string(),
   sellingPoints: z.array(z.string()).default([]),
-  // @deprecated
-  type: podcastBuyOptionTypeSchema.optional(),
   packageType: z.enum(['SINGLE', 'COLLECTION', 'MULTIPRODUCT']).transform(value => value.toUpperCase()),
   purchaseType: z.enum(['OWN', 'LEASE', 'RECURRING']).transform(value => value.toUpperCase()),
   period: z
@@ -61,6 +59,8 @@ export const sesamyFeedProductSchema = z.object({
   price: z.number(),
   purchaseUrl: z.string().optional(),
   priceOverrides: z.array(sesamyPriceOverrideSchema).optional(),
+  isSellable: z.boolean().optional(),
+  isHidden: z.boolean().optional(),
   image: z.string().optional(),
 });
 
