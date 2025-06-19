@@ -48,6 +48,8 @@ export const sesamyProductSchema = z.object({
   // One of these two should be present
   currency: z.string().optional(),
   'sesamy:currency': z.string().optional(),
+  'sesamy:sellable': z.boolean().optional(),
+  'sesamy:hidden': z.boolean().optional(),
   'sesamy:price-override': z
     .array(
       z.object({
