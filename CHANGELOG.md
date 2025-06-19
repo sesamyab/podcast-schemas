@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/sesamyab/podcast-schemas/compare/v1.6.1...v1.7.0) (2025-06-19)
+
+
+### Features
+
+* add sellable and hidden properties to products ([3e5972f](https://github.com/sesamyab/podcast-schemas/commit/3e5972f90262a7e4131254587d646cb75090dcbb))
+
 ## [1.6.1](https://github.com/sesamyab/podcast-schemas/compare/v1.6.0...v1.6.1) (2025-06-13)
 
 
