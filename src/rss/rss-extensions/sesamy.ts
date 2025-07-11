@@ -78,4 +78,16 @@ export const sesamyChannelExtensionSchema = z.object({
     })
     .optional(),
   'sesamy:title': z.string().optional(),
+  'sesamy:external-id': z
+    .array(
+      z.object({
+        entitlement: z.array(
+          z.object({
+            '@_id': z.string(),
+            '@_value': z.string(),
+          }),
+        ),
+      }),
+    )
+    .optional(),
 });
