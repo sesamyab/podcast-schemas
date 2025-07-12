@@ -1,3 +1,52 @@
+# [1.7.0](https://github.com/sesamyab/podcast-schemas/compare/v1.6.1...v1.7.0) (2025-06-19)
+
+
+### Features
+
+* add sellable and hidden properties to products ([3e5972f](https://github.com/sesamyab/podcast-schemas/commit/3e5972f90262a7e4131254587d646cb75090dcbb))
+
+## [1.6.1](https://github.com/sesamyab/podcast-schemas/compare/v1.6.0...v1.6.1) (2025-06-13)
+
+
+### Bug Fixes
+
+* types ([bee1e8f](https://github.com/sesamyab/podcast-schemas/commit/bee1e8f6519aa1ee181f676830bda509e6725c83))
+
+# [1.6.0](https://github.com/sesamyab/podcast-schemas/compare/v1.5.2...v1.6.0) (2025-06-13)
+
+
+### Features
+
+* add sku property to match to exising products ([f74950f](https://github.com/sesamyab/podcast-schemas/commit/f74950fd6d9c91d37d690c96b45f1f1f37e8111d))
+
+## [1.5.2](https://github.com/sesamyab/podcast-schemas/compare/v1.5.1...v1.5.2) (2025-06-09)
+
+
+### Bug Fixes
+
+* make spotify property optional ([25d9b82](https://github.com/sesamyab/podcast-schemas/commit/25d9b82ed2cb71329fb82d1202c2597716c34c00))
+
+## [1.5.1](https://github.com/sesamyab/podcast-schemas/compare/v1.5.0...v1.5.1) (2025-06-09)
+
+
+### Bug Fixes
+
+* update the schema for parsed spotify feeds ([bd3af10](https://github.com/sesamyab/podcast-schemas/commit/bd3af10163fc81c8d2a695905d920adf88cbae34))
+
+# [1.5.0](https://github.com/sesamyab/podcast-schemas/compare/v1.4.10...v1.5.0) (2025-06-09)
+
+
+### Features
+
+* add spotify to sesamy-schema ([7a8d04d](https://github.com/sesamyab/podcast-schemas/commit/7a8d04dd99ea2193117c1191fbefedf7d0096081))
+
+## [1.4.10](https://github.com/sesamyab/podcast-schemas/compare/v1.4.9...v1.4.10) (2025-06-05)
+
+
+### Bug Fixes
+
+* add purchase url to product ([b0c640c](https://github.com/sesamyab/podcast-schemas/commit/b0c640c022859a6b98d83d810b6fd3c70ab5bb87))
+
 ## [1.4.9](https://github.com/sesamyab/podcast-schemas/compare/v1.4.8...v1.4.9) (2025-05-20)
 
 
