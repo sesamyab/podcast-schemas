@@ -81,12 +81,8 @@ export const sesamyChannelExtensionSchema = z.object({
   'sesamy:external-id': z
     .array(
       z.object({
-        entitlement: z.array(
-          z.object({
-            '@_id': z.string(),
-            '@_value': z.string(),
-          }),
-        ),
+        '@_id': z.string(),
+        '@_value': z.string(),
       }),
     )
     .optional(),
