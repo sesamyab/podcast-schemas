@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/sesamyab/podcast-schemas/compare/v1.8.0...v1.8.1) (2025-07-14)
+
+
+### Bug Fixes
+
+* remove entitlement node ([8dfdc91](https://github.com/sesamyab/podcast-schemas/commit/8dfdc9106f1423d9a7dd616e95ad4c103211f749))
+
 # [1.8.0](https://github.com/sesamyab/podcast-schemas/compare/v1.7.0...v1.8.0) (2025-07-14)
 
 
