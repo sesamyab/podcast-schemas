@@ -103,6 +103,7 @@ export const sesamyFeedSchema = z.object({
     brandId: z.string().optional(),
     vendorId: z.string().optional(),
     isPrivate: z.boolean(),
+    autoOnboard: z.string().optional(),
   }),
   spotify: z
     .object({
