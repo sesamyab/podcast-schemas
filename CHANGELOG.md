@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/sesamyab/podcast-schemas/compare/v1.8.1...v1.8.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* add auto-onboard ([3dfbd27](https://github.com/sesamyab/podcast-schemas/commit/3dfbd27225c280c70e24d8a26141e23bac262bbf))
+
 ## [1.8.1](https://github.com/sesamyab/podcast-schemas/compare/v1.8.0...v1.8.1) (2025-07-14)
 
 
